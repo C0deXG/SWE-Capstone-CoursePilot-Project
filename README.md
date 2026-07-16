@@ -22,6 +22,12 @@ Requirements:
 - Python 3.11 or newer
 - A Supabase project for real accounts and persisted data
 
+First step is clonning this porject: 
+```
+1: git clone https://github.com/C0deXG/SWE-Capstone-CoursePilot-Project.git
+2: cd SWE-Capstone-CoursePilot-Project
+```
+
 Install and start the frontend:
 
 ```bash
