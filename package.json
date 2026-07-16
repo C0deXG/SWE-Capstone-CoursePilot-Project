@@ -1,0 +1,43 @@
+{
+  "name": "coursepilot",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "worker:setup": "python3 -m venv worker/.venv && worker/.venv/bin/python -m pip install -r worker/requirements.txt",
+    "worker": "worker/.venv/bin/python -u worker/main.py",
+    "worker:once": "worker/.venv/bin/python -u worker/main.py --once",
+    "worker:test": "PYTHONPATH=worker worker/.venv/bin/python -m unittest discover -s worker/tests"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "date-fns": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "daisyui": "^5.6.18",
+    "eslint": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "globals": "latest",
+    "tailwindcss": "^4.3.2",
+    "typescript": "latest",
+    "typescript-eslint": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  }
+}

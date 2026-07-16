@@ -1,0 +1,1 @@
+"""CoursePilot document ingestion worker."""
